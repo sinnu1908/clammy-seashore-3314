@@ -2,19 +2,270 @@ body{
     width:90%;
     margin:auto;
 }
+
 *{
     margin:0;
     padding:0;
 }
 
 
-#container{
+html {
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#logo>div:nth-child(2)>a{
+    text-decoration: none;
+  }
+  #count{
+    color:green;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+#navt{
+    display:flex;
+    margin:auto;
+    height:80px;
+    align-items: center;
+}
+#navt>div>a{
+    color:black;
+    text-decoration: none;
+}
+#navt>div:nth-child(1){
+    width:40%;
+}
+#navt>div:nth-child(1)>a{
+margin-right: 40px;
+}
+#navt>div:nth-child(2){
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    width:60%;
+
+}
+#navt>div:nth-child(2)>a{
+    margin-left: 30px;
+    font-weight: 510;
+}
+
+#logo{
+    
+    margin:auto;
+    display:flex;
+    height:110px;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo>div:nth-child(1){
+    width:89%;
+    text-align: center;
+    margin-left:30px
+}
+#logo>div:nth-child(2){
+    width:13%;
+}
+#logo>div:nth-child(2)>img{
+    width:11%;  
+}
+
+#navb{
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    margin-top:20px;
+    height:50px;
+    align-items: center;
+}
+
+#navb>div:nth-child(1){
+width:70%;
+}
+#navb>div:nth-child(2){
+    width:25%;  
+    display:flex;
+    justify-content: end;
+}
+#navb>div:nth-child(1)>a{
+    text-decoration: none;
+    font-size: 13px;
+     margin-right: 13px; 
+    color:black;
+    
+}
+#navb>div:nth-child(2)>input{
+padding:8px 20px;
+margin-right:5px;
+}
+#navb>div:nth-child(2)>button{
+    padding:5px 10px;
+}
+
+.sortp{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+.sortp>select{
+    width:110px;
+    border-style: none;
+    margin-right:5%;
+    
+}
+
+#flex{
+    display:flex;
+    margin-top: 20px; 
+    justify-content: space-between;
+}
+
+#filter{
+    margin-right:20px;
+}
+
+#brandName{
+    margin-bottom:30px;
+    padding:4px 20px 4px 5px;
+    font-size: 16px;
+    width:220px;
+}
+#Category{
+
+    padding:4px 20px 4px 5px;
+    font-size: 16px;
+    width:220px;
+}
+
+
+#footer{
+    display:flex;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+    line-height: 30px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+#footer>div:nth-child(1){
+    width:23%;
+}
+#footer>div:nth-child(1)>p:nth-child(odd){
+    padding-left:17px;
+}
+
+#footer>div:nth-child(2){
+    width:15%;
+    padding-left:20px;
+}
+#footer>div:nth-child(3){
+    width:18%;
+    padding-left:20px;
+}
+#footer>div:nth-child(4){
+    width:30%;
+}
+
+#footer>div:nth-child(4)>input{
+    padding:8px 15px;
+    margin-right:3px;
+}
+#footer>div:nth-child(4)>button{
+    padding:8px 13px;
+    font-size:12px;
+    background-color: #455A64;
+    color:white;
+    border-style: none;
+}
+#footer>div>h4{
+    margin-bottom:10px;
+}
+#footer+hr{
+    margin-top:50px;
+    width:90%;
+    margin:auto;
+}
+.foot2{
+    display:flex;
+    justify-content: end;
+    width:90%;
+    margin:auto;
+    margin:10px 0px;
+
+}
+.foot2>p{
+    margin-right:15px;
+}
+
+
+/* womens page */
+
+ #container{
 display:grid;
 grid-template-columns: repeat(4,1fr);
 grid-template-rows: repeat(auto);
-gap:40px;
+gap:25px 20px;
+margin-bottom:40px;
 }
-#container>div>img{
+
+ #container>div>img{
     width:100%;
+    height:250px;
+    margin-bottom: 5px;
 }
+ #container>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px 20px;
+    height:auto;
+     box-sizing: border-box; 
+}
+#container>div>p{
+    font-size: 14px;
+}
+ #container>div>p:nth-child(2),#container>div>p:nth-child(3),#container>div>p:nth-child(4){
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    
+}
+#container>div>p:nth-child(3){
+    height:50px;
+    margin-top: 10px;
+}
+
+#container>div>p:nth-child(5){
+    margin-top:10px;
+}
+#container>div>p:nth-child(5),#container>div>p:nth-child(6),#container>div>p:nth-child(7){
+    line-height: 25px;
+} 
+ 
+#container>div>button{
+
+    margin-top:20px;
+    background-color: #F57C00;
+    border-style: none;
+    font-size:16px;
+    color:white;
+    
+    }
+    #container>div>button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: green;
+    
+    }
+    #container>div>button:nth-child(8){
+        padding:5px 10px;
+        border-radius: 5px;
+    }
+
+
+
+  
 

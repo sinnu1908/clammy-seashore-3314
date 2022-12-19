@@ -11,6 +11,12 @@ html {
     height: 100%;
     background-color: white;
 } 
+
+
+#logo>div:nth-child(2)>a{
+  text-decoration: none;
+}
+
 #navt{
     display:flex;
     width:90%;
