@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="virtual-select.min.js"></script> -->
+
+    <link rel="stylesheet" href="virtual-select.min.css">
     <title>Document</title>
    
 </head>
 <link rel="stylesheet" href="womens.css">
-<body>
+ <body>
     <nav id="navt">
         <DIV>
-           <a href="#">WOMEN</a>
+           <a href="index.html">WOMEN</a>
            <a href="#">MEN</a>
            <a href="#">KIDS</a>
            <a href="#">LIFE</a>
@@ -33,9 +37,12 @@
         </div>
         
         <div>
-            <span>Shopping Bag</span>
-            <i class="fa fa-shopping-bag" style="color:#E91E63; font-size: 24px;"></i>
-            <span id="count">0</span>
+            <a href="Cart.html">
+                <span>Shopping Bag</span>
+                <i class="fa fa-shopping-bag" style="color:#E91E63; font-size: 24px;"></i>
+                <span id="count">0</span>
+            </a>
+            
         </div>
     </div>
 
@@ -56,13 +63,118 @@
     <button><i class="fa fa-search"></i></button>
 </DIV>
     </nav>
+    <hr> 
+
+
+    
+<div class="sortp">
+<span id="allproducts"></span>
+
+    <select id="sort">
+        <option value="">Sort By Price</option>
+        <option value="priceLTH">Price: Low to High</option>
+        <option value="priceHTH">Price: Low to High</option>
+        </select>
+</div>
     <hr>
 
+    
 
 
 
+<div id="flex">
 
+<div id="filter">
+
+    
+        <select id="brandName"  name="native-select" placeholder="Filter by Brand Name" data-search="false" data-silent-initial-value-set="true">
+            <option value="">Filter by Brand Name</option>
+            <option value="ROGER">ROGER</option>
+            <option value="AQUAZZURA">AQUAZZURA</option>
+                <option value="GANNI">GANNI</option>
+                <option value="SAINT LAURENT">SAINT LAURENT</option>
+                <option value="MAX MARA">MAX MARA</option>
+                <option value="ISABEL MARANT">ISABEL MARANT</option>
+                ...
+            </select>
+
+
+            <select id="Category" name="native-select" placeholder="Filter by Category" data-search="false" data-silent-initial-value-set="true">
+                <option value="">Filter by Category</option>
+                <option value="FOOTWEAR">FOOTWEAR</option>
+                <option value="CLOTHES">CLOTHES</option>
+                    <option value="BAG">BAG</option>
+                    <option value="CAPS">CAPS</option>
+                   
+                    ...
+                </select>
+
+
+                
+            
+    
+ 
+    
+   
+        
+
+    </div>
     <div id="container"></div>
+
+</div>
+<hr>
+    
+<footer id="footer">
+    <div>
+        <h4>SERVICE & SECURITY</h4>
+        <p><span id="tick">&#x2713;</span>  Fast delivery</p>
+        <p>Delivery within 2 business days</p>
+    
+        <p>&#x2713;  Free returns within 30 days</p>
+        <p>Convenient return service</p>
+    
+        
+        <p>&#x2713;  Secure payment and data protection</p>
+        <p>SSL encryption for secure transactions and personal data</p>
+    </div>
+    <div>
+        <h4>MYSTYLEMYSHOP</h4>
+        <P>About us</P>
+        <P>Trust & services</P>
+        <P>Sustainability</P>
+        <P>Press</P>
+        <P>Careers</P>
+        <P>Investor Relations</P>
+        <P>Affilates</P>
+        <P>Tax-Free Shopping</P>
+    </div>
+    
+    
+    <div>
+        <h4>CUSTOMER CARE</h4>
+        <P>Contact us</P>
+        <P>Shipping information</P>
+        <P>Secure payment</P>
+        <P>Exchanges</P>
+        <P>Return</P>
+        <P>After sale service</P>
+        <P>Gift card</P>
+    </div>
+    
+    <div>
+    <h4>GET TREND UPDATE,STYLE TIPS AND MORE</h4>
+    <input type="email" placeholder="your email address here">
+    <button>SIGN UP</button>
+    <P>Wish list <span style="font-size:20px">&#x2661;</span></P>
+    <p>Receive personal notifications</p>
+    </div>
+        </footer>
+        <hr>
+        <div class="foot2">
+            <p>terms of use</p>
+            <p>privacy policy</p>
+            <p>imprint</p>
+        </div>
 
     <script src="womens.js"></script>
 </body>
